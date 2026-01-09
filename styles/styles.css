@@ -1,1 +1,367 @@
-/* ................ CSS codes will be added here ......... */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*====================================================*/
+
+/* Shared Style */
+
+
+.font-inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+
+/* ------ NavBar ---------- */
+.navbar {
+    width: 1600px;
+    height: 82px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    height: 45px;
+    width: auto;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #30B868;
+}
+
+.cta-button {
+    background-color: #30B868;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #3d8269;
+}
+
+
+
+/* -------- Regular Style --------- */
+#banner {
+    width: 1600px;
+    height: 674px;
+    margin: 0 auto;
+    background-image:
+        linear-gradient(
+            rgba(211, 211, 211, 0.962),
+            rgba(211, 211, 211, 0.494)
+        ),
+        url("../assets/hero-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#banner .banner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    padding: 168px 120px 263px;
+}
+
+
+#banner .btn-round {
+    border-radius: 50px;
+    background-color: #FFFFFF;
+    color: #30B868;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    padding: 8px 20px;
+    width: fit-content;
+    cursor: pointer;
+}
+#banner .btn-round:hover {
+    background-color: #30B868;
+    color: #FFFFFF;
+    transform: scale(1.05);
+}
+
+#banner h1.col-white {
+    font-size: 72px;
+    font-weight: 700;
+    color: #FFFFFF;
+    padding-top: 16px;
+}
+
+#banner h1.col-green {
+    font-size: 72px;
+    font-weight: 700;
+    color: #30B868;
+    padding-bottom: 16px;
+}
+
+#banner p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 32px;
+    padding-bottom: 32px;
+}
+
+#banner .banner-btn-container {
+    display: flex;
+    gap: 16px;
+}
+
+.btn-regular-green {
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFFFFF;
+    background-color: #30B868;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 24px;
+    cursor: pointer;
+}
+.btn-regular-green:hover {
+    background-color: #FFFFFF;
+    color: #30B868;
+    transform: scale(1.05);
+}
+
+.btn-regular-transparent {
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFFFFF;
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    padding: 12px 24px;
+    cursor: pointer;
+}
+.btn-regular-transparent:hover {
+    background-color: #FFFFFF;
+    color: #000000;
+    transform: scale(1.05);
+}
+
+
+/* ........Notes Section.......... */
+#notes-section {
+    width: 1600px;
+    /* height: 674px; */
+    margin: 0 auto;
+}
+
+#notes-section .notes-section-heading {
+    text-align: center;
+    /* padding-bottom: 44px; */
+}
+
+#notes-section .notes-section-heading h2 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+#notes-section .notes-section-heading p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#notes-section .notes-card-part {
+    margin-top: 44px;
+    display: flex;
+    gap: 24px;
+}
+
+#notes-section .note-card {
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.172);
+    position: relative;
+}
+
+.note-card::before {
+    content: "";
+    position: absolute;
+    top: 30px;                 
+    left: 50%;
+    width: 90px;               
+    height: 90px;
+    background-color: #30B868;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+#notes-section .note-card img {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    z-index: 1;
+    display: block;
+    margin: 45px auto 16px;
+}
+
+#notes-section .note-card h4 {
+    font-size: 24px;
+    font-weight: 500;
+    padding-bottom: 16px;
+}
+
+#notes-section .note-card p {
+    font-size: 16px;
+    padding-bottom: 16px;
+    padding-bottom: 60px;
+}
+
+
+/* ........BRAINS Section.......... */
+#brains-section {
+    width: 1600px;
+    /* height: 674px; */
+    margin: 0 auto;
+}
+
+#brains-section .brain-section-container {
+    margin: 120px;
+    display: flex;
+    flex-direction: row;
+}
+
+#brains-section .text-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#brains-section .text-part .the-solution{
+     font-size: 16px;
+     color: #30B868;
+}
+
+#brains-section .text-part h2 {
+    margin: 16px 0;
+    font-size: 48px;
+    font-weight: 800;
+}
+
+#brains-section .text-part p {
+    font-size: 16px;
+}
+
+#brains-section .text-part .table-section {
+    margin-top: 40px;
+}
+
+#brains-section .text-part .table-section .bold-words{
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 10px;
+}
+
+
+/* ----------- Think Section -------- */
+#think-section {
+    width: 1600px;
+    margin: 0 auto; 
+}
+
+#think-section .think-container {
+    margin: 0 120px 120px 120px;
+    background-color: #F7F6F2;
+    
+}
+
+.inner-box {
+    padding: 80px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.inner-box h2 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.inner-box p {
+    font-size: 16x;
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+/* ----------- Footer ---------- */
+footer {
+    width: 1600px;
+    height: 348px;
+    padding-top: 120px;
+    padding-right: 120px;
+    padding-bottom: 0px;
+    padding-left: 120px;
+    margin: 0 auto;
+    background-color: #001931;
+}
+
+footer .footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer .copyright-container {
+    width: 1600px;
+    height: 348px;
+    padding-top: 60px;
+    padding-right: 120px;
+    padding-bottom: 0px;
+    padding-left: 120px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer .footer-container .social-box .icon-box img {
+    width: 20px ;
+}
+
+footer .footer-container .social-box  h5 {
+    font-size: 16px;
+    color: white;
+    padding-bottom: 16px;
+}
+
+footer .copyright-container p {
+    font-size: 16px;
+    color: white;
+}
