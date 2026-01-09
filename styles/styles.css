@@ -195,13 +195,11 @@
 /* ........Notes Section.......... */
 #notes-section {
     width: 1600px;
-    /* height: 674px; */
     margin: 0 auto;
 }
 
 #notes-section .notes-section-heading {
-    text-align: center;
-    /* padding-bottom: 44px; */
+    text-align: center;   
 }
 
 #notes-section .notes-section-heading h2 {
