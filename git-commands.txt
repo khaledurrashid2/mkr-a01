@@ -1,0 +1,9 @@
+Git commands for this repository made for Assignment 01, Batch 13 of Programming Hero
+---------------------
+
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/khaledurrashid2/mkr-a01.git
+git push -u origin main
