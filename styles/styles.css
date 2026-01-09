@@ -176,6 +176,21 @@
     transform: scale(1.05);
 }
 
+/* ...for font-awesome icons... */
+.btn-regular-green i {
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+.btn-regular-transparent i {
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+.btn-round i {
+    margin-left: 0;
+    margin-right: 10px;
+}
 
 /* ........Notes Section.......... */
 #notes-section {
